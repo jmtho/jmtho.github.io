@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Changing Direction"
-date:   2017-03-26 14:46:41 +0000
+date:   2017-03-26 10:46:42 -0400
 ---
 
 
