@@ -10,7 +10,7 @@ date:   2017-04-15 13:02:39 -0400
 
 This is my attempt to better understand Ruby blocks, and how to use `yield`. I'm sure that there are more efficient and elegant ways to approach the same problem, and I hope that in time, I'll know what they are! For now, I'm wading through beginner's Ruby.  [This](https://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes) is a good overview of how Ruby blocks work, and a more authoritative source than below.
 
-## The Problem
+<h2>The Problem</h2>
 
 I have a basket of kittens. Some have short hair, and some are fluffy. I want to find the fluffy kittens, put a ribbon on them, and add them to a special basket. The fluffy kittens have fancy names, longer than four characters. The function should `puts` which kittens are receiving a ribbon, and return the special basket with the fluffy kittens. 
 
@@ -21,7 +21,7 @@ basket_of_kittens = ["Prudence","Lucy","Sebastian","Sam","Max"]
 
 I'll work through this first using `#each`, and then using `#select`.
 
-## Using each
+<h2>Using each</h2>
 
 First, I define a method, `find_fluffy_kittens` that takes an array, `basket_of_kittens`, as an argument.
 
@@ -174,7 +174,7 @@ Sebastian gets a ribbon!
 => ["Prudence", "Sebastian"]
 ```
 
-## Using select
+<h2>Using select</h2>
 
 I can shorten my code significantly by using `#select`. `#select` returns a new array with all of the elements that caused the block passed to `#select` to return a true value, so there is no need to create a separate basket for the fluffy kittens. 
 
