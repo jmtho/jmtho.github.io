@@ -10,8 +10,7 @@ date:   2017-04-15 13:02:39 -0400
 
 This is my attempt to better understand Ruby blocks, and how to use `yield`. I'm sure that there are more efficient and elegant ways to approach the same problem, and I hope that in time, I'll know what they are! For now, I'm wading through beginner's Ruby.  [This](https://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes) is a good overview of how Ruby blocks work, and a more authoritative source than below.
 
-The Problem
-------------
+## The Problem
 
 I have a basket of kittens. Some have short hair, and some are fluffy. I want to find the fluffy kittens, put a ribbon on them, and add them to a special basket. The fluffy kittens have fancy names, longer than four characters. The function should `puts` which kittens are receiving a ribbon, and return the special basket with the fluffy kittens. 
 
