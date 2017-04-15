@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Yielding Fluffy Kittens to a Block"
-date:   2017-04-15 17:02:39 +0000
+date:   2017-04-15 13:02:39 -0400
 ---
 
 ![Kitten in a basket](http://i.imgur.com/BnLSI2w.jpg)
@@ -15,12 +15,13 @@ This is my attempt to better understand Ruby blocks, and how to use `yield`. I'm
 I have a basket of kittens. Some have short hair, and some are fluffy. I want to find the fluffy kittens, put a ribbon on them, and add them to a special basket. The fluffy kittens have fancy names, longer than four characters. The function should `puts` which kittens are receiving a ribbon, and return the special basket with the fluffy kittens. 
 
 Here is the array, representing the basket of kittens, which I'll pass as an argument to the method I'm creating:
-
-`basket_of_kittens = ["Prudence","Lucy","Sebastian","Sam","Max"]`
+```
+basket_of_kittens = ["Prudence","Lucy","Sebastian","Sam","Max"]
+```
 
 I'll work through this first using `#each`, and then using `#select`.
 
-## Using #each
+## Using each
 
 First, I define a method, `find_fluffy_kittens` that takes an array, `basket_of_kittens`, as an argument.
 
@@ -82,7 +83,9 @@ end
 
 Here's the block that will run when we hit `yield`:
 
-`{|fluffy_kitten| puts "#{fluffy_kitten} gets a ribbon!"}`
+```
+{|fluffy_kitten| puts "#{fluffy_kitten} gets a ribbon!"}
+```
 
 Here, `fluffy_kitten` refers to the element that we are yielding to the block; the kitten that has a name with more than four characters. This could be done within main method, but for the sake of demonstration, I'm adding the ribbon using `yield`.
 
@@ -171,7 +174,7 @@ Sebastian gets a ribbon!
 => ["Prudence", "Sebastian"]
 ```
 
-## Using #select
+## Using select
 
 I can shorten my code significantly by using `#select`. `#select` returns a new array with all of the elements that caused the block passed to `#select` to return a true value, so there is no need to create a separate basket for the fluffy kittens. 
 
