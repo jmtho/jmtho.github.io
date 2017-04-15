@@ -148,7 +148,7 @@ def find_fluffy_kittens(basket_of_kittens)
 	
     if kitten.length > 4
 		
-      special_basket << yield(kitten) # return value from the block is added to special_basket
+      special_basket << yield(kitten) # return value from the block added to special_basket
 			
     end 
 		
