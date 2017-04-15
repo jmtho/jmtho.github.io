@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Yielding Fluffy Kittens to a Block"
+title:  "Blocks, Yield and Kittens"
 date:   2017-04-15 13:02:39 -0400
 ---
 
